@@ -58,7 +58,7 @@ async function chat() {
         });
 
         const content = result.choices[0].message.content;
-        console.log(content); // har step dekho
+        console.log(content);
         messages.push({ role: "assistant", content: content });
 
         if (content.includes('"type":"output"')) {
